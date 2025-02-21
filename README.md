@@ -16,7 +16,7 @@ This repository contains the implementation of a **Football Player Tracking and 
 │── 📄 tracking_csrt.py     # Player tracking implementation using CSRT tracker
 │── 📄 metrics.py           # Performance metric calculations
 │── 📄 aux_func.py          # Auxiliary functions for tracking and metric computation
-│── 📄 requirements.txt     # Python dependencies
+└── 📄 requirements.txt     # Python dependencies
 ```
 
 ## Installation
@@ -40,13 +40,30 @@ To track football players in a video and generate bounding box data:
 ```bash
 python tracking_csrt.py
 ```
-This will create a CSV file containing player tracking data.
+
+The first frame of the video will appear. The user has to manually select the players they want to track by clicking and dragging the mouse over each player to draw a bounding box.
+
+- Once a bounding box is drawn, press **Space** to save it.
+   - This process can be repeated **for multiple players**.
+- After selecting all the bounding boxes you need, press **Enter**
+
+<div align="center">
+<img src="images/player_bbox.png" alt="Tracked Players" width="500">
+</div>
+
+The script will then process the video and generate a CSV file containing tracking data for each frame, such as **frame number, player ID, bounding box coordinates, and colors** for each tracked player.
 
 ### 2. Compute Performance Metrics
 To analyze player performance based on the tracking data:
 ```bash
 python metrics.py
 ```
+
+
+<div align="center">
+<img src="images/field_measurements.png" alt="Field Measurements" width="500">
+</div>
+
 This script calculates **speed, distance covered, and activity count**, and generates an output video with visual overlays.
 
 ## Methodology
@@ -97,4 +114,3 @@ For any questions or collaboration opportunities, feel free to reach out:
 
 ---
 Enjoy tracking football players! ⚽📊
-
