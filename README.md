@@ -30,7 +30,7 @@ To run this project, you need to install Python and the necessary dependencies.
 ### Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your_username/football-tracking.git
+   git clone https://github.com/saulleyva/football-tracking-opencv.git
    cd football-tracking
    ```
    
