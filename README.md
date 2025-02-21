@@ -41,11 +41,11 @@ To track football players in a video and generate bounding box data:
 python tracking_csrt.py
 ```
 
-The first frame of the video will appear. The user has to manually select the players they want to track by clicking and dragging the mouse over each player to draw a bounding box.
+The user has to manually select the players they want to track by clicking and dragging the mouse over each player to draw a bounding box.
 
 - Once a bounding box is drawn, press **Space** to save it.
    - This process can be repeated **for multiple players**.
-- After selecting all the bounding boxes you need, press **Enter**
+- After selecting all the bounding boxes you need, press **Enter**.
 
 <div align="center">
 <img src="images/player_bbox.png" alt="Tracked Players" width="500">
@@ -58,13 +58,13 @@ To analyze player performance based on the tracking data:
 ```bash
 python metrics.py
 ```
-
+The user has to manually select **four different pairs of points** on the field and assign them their corresponding **real-world distances**.
 
 <div align="center">
 <img src="images/field_measurements.png" alt="Field Measurements" width="500">
 </div>
 
-This script calculates **speed, distance covered, and activity count**, and generates an output video with visual overlays.
+With these points, this script calculates **speed, distance covered, and activity count**, and generates an output video with visual overlays.
 
 ## Methodology
 ### 1. **Tracking Players**
@@ -78,7 +78,7 @@ This script calculates **speed, distance covered, and activity count**, and gene
 
 ## Example Results
 ### **Tracked Players**
-![Tracked Players](example-tracking.png)
+![Results](images/results.png)
 
 ### **Speed and Distance Metrics**
 | Player | Distance (m) | Speed (m/s) | Activity Count |
@@ -92,7 +92,7 @@ This script calculates **speed, distance covered, and activity count**, and gene
 - **More advanced activity recognition**: Could use **pose estimation** instead of histogram-based detection.
 
 ## Citation
-If you use this repository, please cite:
+If you use this repository, please cite the original paper on which this work is based:
 ```
 @article{Merzah2024,
   author    = {B. M. Merzah, M. S. Croock, and A. N. Rashid},
@@ -104,13 +104,7 @@ If you use this repository, please cite:
 }
 ```
 
-## License
-This project is licensed under the MIT License.
-
 ## Contact
 For any questions or collaboration opportunities, feel free to reach out:
 - **Author:** Saúl Leyva Santarén
-- **Email:** saul.leyva.santaren@udc.es
-
----
-Enjoy tracking football players! ⚽📊
+- **Email:** saul.leyva.santaren@udc.es or saul.leyva.santaren@gmail.com
