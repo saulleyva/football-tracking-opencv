@@ -11,7 +11,7 @@ This repository contains the implementation of a **Football Player Tracking and 
 
 ## Repository Structure
 ```
-📂 football-tracking
+📂 football-tracking-opencv/
 │── 📄 README.md            # Project documentation
 │── 📄 tracking_csrt.py     # Player tracking implementation using CSRT tracker
 │── 📄 metrics.py           # Performance metric calculations
